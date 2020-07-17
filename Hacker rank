@@ -123,3 +123,66 @@ if __name__ == '__main__':
     tax_percent = int(raw_input())
 
     solve(meal_cost, tip_percent, tax_percent)
+
+Day 3: Intro to Conditional Statements
+
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+
+
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int N = scanner.nextInt();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+        scanner.close();
+    }
+}
+
+Day 4: Class vs. Instance
+Objective
+In this challenge, we're going to learn about the difference between a class and an instance; because this is an Object Oriented concept, it's only enabled in certain languages. 
+import java.io.*;
+import java.util.*;
+
+public class Person {
+    private int age;	
+  
+	public Person(int initialAge) {
+  		// Add some more code to run some checks on initialAge
+	}
+
+	public void amIOld() {
+  		// Write code determining if this person's age is old and print the correct statement:
+        System.out.println(/*Insert correct print statement here*/);
+	}
+
+	public void yearPasses() {
+  		// Increment this person's age.
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+		for (int i = 0; i < T; i++) {
+			int age = sc.nextInt();
+			Person p = new Person(age);
+			p.amIOld();
+			for (int j = 0; j < 3; j++) {
+				p.yearPasses();
+			}
+			p.amIOld();
+			System.out.println();
+        }
+		sc.close();
+    }
+}
